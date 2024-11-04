@@ -16,13 +16,13 @@ const PieChart = props => {
   const {data} = props
 
   return (
-    <div className="pie-chart-bg-container mt-2 d-flex justify-content-center">
+    <div className='pie-chart-bg-container mt-2 d-flex justify-content-center'>
       <PieChartComponent width={400} height={350}>
         <Pie
           data={data}
           innerRadius={0}
           outerRadius={100}
-          dataKey="value"
+          dataKey='value'
           label
         >
           {data.map((entry, index) => (
@@ -30,7 +30,7 @@ const PieChart = props => {
           ))}
         </Pie>
         <Tooltip />
-        <Legend verticalAlign="bottom" height={36} />
+        <Legend verticalAlign='bottom' height={36} />
       </PieChartComponent>
     </div>
   )
